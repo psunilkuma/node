@@ -1,0 +1,16 @@
+This is a node js developer application
+
+const express = require('express');
+const app = express();
+const port = 3000;
+
+// Define a sample route
+app.get('/', (req, res) => {
+  res.json({ message: 'Welcome to your mobile app API!' });
+});
+
+// Start the server
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});
+
